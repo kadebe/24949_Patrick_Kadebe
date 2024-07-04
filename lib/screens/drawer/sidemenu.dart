@@ -28,7 +28,7 @@ class _SideMenuState extends State<SideMenu> {
                   bottomLeft: Radius.circular(1.0),
                   bottomRight: Radius.circular(1.0),
                 ),
-                color: Color(0xffB81736),
+                color: Color(0xff8563ab),
                 image: DecorationImage(
                     fit: BoxFit.fill, image: AssetImage('assets/images.jpeg'))),
           ),
@@ -70,6 +70,16 @@ class _SideMenuState extends State<SideMenu> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => FabTabs(selectedIndex: 3)))
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text("Settings"),
+            onTap: () => {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => FabTabs(selectedIndex: 4)))
             },
           )
         ],

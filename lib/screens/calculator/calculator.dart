@@ -46,7 +46,7 @@ class _CalculatorState extends State<Calculator> {
             "Calculator",
             style: TextStyle(color: Colors.white),
           ),
-          backgroundColor: Color(0xffB81736),
+          backgroundColor: Color(0xff8563ab),
         ),
         body: Column(
           children: [
